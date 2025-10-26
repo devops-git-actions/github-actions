@@ -3,7 +3,7 @@ on: [push]
 concurrency: 
   # This workflow should be trigger for any branch only once 
   group: ${{ github.workflow }}-${{ github.ref }} 
-  cancel-in-progress: true # Existing will be canceled latest will be 
+  cancel-in-progress: true # Existing will be canceled latest will be run
 jobs: 
   hello: 
     runs-on: ubuntu-latest 
